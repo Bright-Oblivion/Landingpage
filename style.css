@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+   width: 100px;
+   cursor: pointer;
+   margin: 30px 0;
+   transition: transform 0.5s;
+}
+
+.logo:hover{
+  transform: scale(1.1);
+}
+
+.menu-icon {
+  width: 40px;
+  cursor: pointer;
+  display: none;
+
+}
+
+
+.drinking{
+  transition: 1s;
+}
+.drinking:hover{
+  transform: scale(1.1);
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+  
+}
+
+nav ul li {
+  list-style: none;
+  display: inline;
+  margin-right: 30px;
+  position: relative;
+  right: -100px;
+  
+ 
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: 60;
+}
+
+nav ul li a:hover {
+  color: blueviolet
+
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.col-1 {
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 50px;
+}
+
+.col-1 h2{
+  font-size: 54px;
+}
+
+.col-1 h3 {
+  font-size: 30px;
+  color: #2b2828;
+  font-weight: 100;
+  margin: 20px 0 10px;
+}
+
+.col-1 p {
+  font-size: 16;
+  color: #1b1a1a;
+  font-weight: 100;
+}
+
+button {
+  width: 140px;
+  border: 0;
+  padding: 12px 10px;
+  outline: none;
+  color: #fff;
+  background: black;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: width 0.5s;
+
+}
+
+
+.order:hover{
+  background: linear-gradient(blueviolet, #e460ff);
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.col-1::after{
+  content: '';
+  width: 16px;
+  height: 57%;
+  background: linear-gradient(#ff469f, #ff6062);
+  position: absolute;
+  left: -40px;
+  top: 8px;
+}
+
+.color-box{
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(#ff469f, #ff6062);
+  border-radius: 680px 0 0 20px;
+  height: 75%;
+  width: 48%;
+  z-index: -1;
+}
+
+.socials {
+  position: fixed;
+  bottom: 10px; 
+  right: 10px;  
+  z-index: 2; 
+}
+
+.socials img {
+  width: 30px;  
+  height: 30px; 
+  margin: 20px;  
+  transition: transform 0.5s;             /*Smooths expansion*/
+}
+
+.socials img:hover{
+  transform: scale(2.1);                  /*Expands social logos*/
+}
+
+.footer-text{
+  position: fixed;
+  bottom: 10px; 
+  left: 10px; 
+  color: #686767; 
+  z-index: 2; 
+
+}
+
+
+@media only screen and (max-width: 700px){
+  
+  h2{
+    position: relative;
+    right: -40%;
+    top: 200%;
+
+  }
+  h3{
+    position: relative;
+    right: -40%;
+    top: 200%;
+
+  }
+  .p1 {
+    position: relative;
+    right: -40%;
+    top: 200%;
+    color: black;
+
+  }
+  button{
+    position: relative;
+    right: -40%;
+    top: 200%;
+
+  }
+  nav ul {width: 100%;
+    
+    position: absolute;
+    top: 120px;
+    right: 0;
+    z-index: 2;      
+  }
+  nav ul li{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: 11%;
+  }
+  nav ul li a{
+    color: #060606;
+  }
+  nav ul li{
+    display: none;
+    
+  }
+
+  .menu-icon{
+    display: block;
+  }
+
+}
+
+/*Increased pixel size for better viewing on tablets to 827*/
+@media only screen and (max-width: 827px){
+  
+  h2{
+    position: relative;
+    right: -40%;
+    top: 200%;
+
+  }
+  .logo{
+    position: relative;
+    left: -50px;
+    top: -20px;
+
+  }
+  h3{
+    position: relative;
+    right: -40%;
+    top: 200%;
+
+  }
+  .p1 {
+    position: relative;
+    right: -40%;
+    top: 200%;
+    color: black;
+
+  }
+  button{
+    position: relative;
+    right: -40%;
+    top: 200%;
+
+  }
+
+.drinking{
+  position: relative;
+  right: -180px;
+}
+  nav ul {width: 100%;
+    
+    position: absolute;
+    top: 120px;
+    right: 0;
+    z-index: 2;      
+  }
+  nav ul li{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: 11%;
+  }
+  nav ul li a{
+    position: relative;
+    top: -140px;
+    left: -150px;
+    color: #060606;
+    
+  }
+  
+
+  .menu-icon{
+    display: block;
+  }
+
+}
+
+@media only screen and (max-width: 700px){
+  
+  h2{
+    position: relative;
+    right: -40%;
+    top: 200%;
+
+  }
+  h3{
+    position: relative;
+    right: -40%;
+    top: 200%;
+
+  }
+  .p1 {
+    position: relative;
+    right: -40%;
+    top: 200%;
+    color: black;
+
+  }
+  button{
+    position: relative;
+    right: -40%;
+    top: 200%;
+
+  }
+  nav ul {width: 100%;
+    
+    position: absolute;
+    top: 120px;
+    right: 0;
+    z-index: 2;      
+  }
+  nav ul li{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: 11%;
+  }
+  nav ul li a{
+    color: #060606;
+  }
+  nav ul li{
+    display: none;
+    
+  }
+
+  .menu-icon{
+    display: block;
+  }
+
+}
+
+/*Below 655px*/
+@media only screen and (max-width: 655px){
+  
+h2{
+    position: relative;
+    font-size: 1.2em;
+    right: -40%;
+    top: 200%;
+}
+.logo{
+    position: relative;
+    left: -50px;
+    top: -20px;
+
+}
+h3{
+    position: relative;
+    right: -40%;
+    top: 200%;
+
+}
+.p1{
+    position: relative;
+    font-size: 1.2em;
+    right: -40%;
+    top: 200%;
+    color: black;
+}
+button{
+    position: relative;
+    right: -40%;
+    top: 200%;
+}
+.drinking{
+  position: relative;
+  right: -180px;
+}
+nav ul{width: 100%;
+    
+    position: absolute;
+    top: 120px;
+    right: 0;
+    z-index: 2;      
+}
+nav ul li{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: 11%;
+}
+nav ul li a{
+    position: relative;
+    top: -140px;
+    left: -100px;
+    color: #060606;
+}
+  .menu-icon{
+    display: block;
+  }
+
+}
